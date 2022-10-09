@@ -1,16 +1,35 @@
-# mimron_trs_app
+# TRS APP
 
-A new Flutter project.
+## Requirements
 
-## Getting Started
+- [Flutter](https://docs.flutter.dev/get-started/install) go to the flutter website download and installer
+- [TRS Api](https://github.com/mimron/mimron_trs_api) install for Backend Api
+- [Flutter & Dart VSCode Extensions](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) (Recommended, nice to have)
 
-This project is a starting point for a Flutter application.
+## First Time Installation
 
-A few resources to get you started if this is your first Flutter project:
+Clone the repo:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+git clone https://github.com/mimron/mimron_trs_app.git
+cd mimron_trs_app
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Install the dependencies:
+
+```bash
+flutter pub get
+```
+
+Set the url TRS Api Backend:
+
+```bash
+static const BASE_URL = 'http://127.0.0.1:3000/api/v1';
+# inside directory /lib/helpers/constans.dart and modify BASE_URL variables (if needed)
+```
+
+Running Program:
+
+```bash
+flutter run
+```
